@@ -123,6 +123,17 @@ header a:hover {
 /*----------------------
   hot news styles 
   ----------------------*/
+  .hot-news{
+    border: 2px solid black;
+    margin-bottom: 40px;
+  }
+  .hot-news h2{
+    text-align: center;
+    font-size: 40px;
+  }
+  .fa-fire{
+    color: orangered;
+  }
 .newses {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
