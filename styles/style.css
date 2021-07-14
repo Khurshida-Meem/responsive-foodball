@@ -1,0 +1,260 @@
+/*---------------------------
+    font family poppins 
+----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/*------------------
+     utilities 
+-------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  align-items: center;
+  width: 870px;
+  padding: 30px;
+  margin-top: 21px;
+}
+.flexible-container,
+.newsletter-item,
+header,
+footer {
+  display: flex;
+  align-items: center;
+}
+.flexible-container {
+  margin-bottom: 50px;
+  
+}
+.flexible-container img{
+  width: 100%;
+}
+.flexible-container div{
+  width: 50%;
+  padding: 5%;
+}
+/*-----------------
+    header style
+-------------------*/
+header {
+  background-color: #2d25a0;
+  height: 677px;
+  width: 100%;
+  color: white;
+  justify-content: center;
+}
+header h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-left: 10%;
+}
+header img {
+  width: 556.01px;
+  margin-left: 102px;
+}
+header img:hover {
+  transform: rotate(360deg);
+  transition: transform 1.5s ease-in-out;
+}
+header a {
+  background-color: #e02c6d;
+  color: white;
+  padding: 10px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 10%;
+}
+header a:hover {
+  background-color: hsl(338, 84%, 76%);
+  box-shadow: #ffc7db 0px 30px 100px;
+  padding: 12px 26px;
+}
+.fa-arrow-right {
+  padding-left: 8px;
+}
+
+/*--------------------
+    players styles 
+--------------------*/
+
+.players {
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  justify-content: center;
+}
+.player {
+  margin-bottom: 27px;
+  width: 330px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+}
+.player:hover {
+  box-shadow: 0px 0px 40px rgba(165, 150, 150, 0.74);
+}
+.player img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.player-info {
+  padding: 1px 15px;
+  padding-bottom: 20px;
+}
+.player-info h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 28px;
+}
+.player-info p {
+  padding: 10px 0;
+}
+
+/*--------------------
+     newsletter style 
+----------------------*/
+
+.newsletter {
+  background-image: radial-gradient( white,#2d25a0);
+  width: 100%;
+}
+
+.newsletter h1{
+  text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.newsletter p{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+form {
+  font-size: 30px;
+  text-align: left;
+}
+.newsletter input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-top: 2px grey;
+  border-left: 2px grey;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 40px rgb(187, 185, 185);
+  height: 20%;
+}
+.button {
+    text-decoration: none;
+    background-image: radial-gradient(#9f9bda, #2d25a0);
+    color: white;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    
+  }
+/*-----------------
+    footer styles 
+-------------------*/
+footer {
+  flex-direction: column;
+  height: 280px;
+  margin-top: 158px;
+}
+footer img {
+  width: 483px;
+}
+footer a {
+  text-decoration: none;
+}
+.fab {
+  padding-left: 14px;
+  color: gray;
+  font-size: 30px;
+}
+
+/*----------------------------
+   media query for phone 
+-------------------------------*/
+
+@media only screen and (max-width: 688px) {
+  body{
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* header style  */
+  header{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+  }
+  header h1 {
+    margin-left: 16px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  header a{
+    margin-left: 16px;
+  }
+  header img{
+  width: 329px;
+  margin-left: 16px;
+  }
+  /* players style  */
+
+  .players{
+    padding-top: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* newsletter style */
+  .newsletter{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+  }
+  .media-query{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+  }
+  .media-query input{
+    margin: 0;
+  }
+  .media-query a{
+    margin-top: 0;
+  }
+  .newsletter p{
+    font-size: 20px;
+  }
+  .media-query img{
+    width: 100%;
+  }
+  /* footer style  */
+  footer{
+    margin: 0;
+  }
+  footer img{
+    width: 225px;
+    margin-top: 43px;
+  }
+}
