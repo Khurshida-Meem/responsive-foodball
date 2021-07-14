@@ -123,18 +123,18 @@ header a:hover {
 /*----------------------
   hot news styles 
   ----------------------*/
-  .hot-news{
-    border: 2px solid black;
-    margin-bottom: 40px;
-  }
-  .hot-news h2{
-    margin: 0;
-    text-align: center;
-    font-size: 40px;
-  }
-  .fa-fire{
-    color: orangered;
-  }
+.hot-news {
+  border: 2px solid black;
+  margin-bottom: 40px;
+}
+.hot-news h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+}
+.fa-fire {
+  color: orangered;
+}
 .newses {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -152,18 +152,18 @@ header a:hover {
   width: 300px;
   height: auto;
 }
-.news-detail{
+.news-detail {
   margin-left: 20px;
 }
 .news-detail h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
-.news-author{
+.news-author {
   font-size: 12px;
   color: grey;
 }
-.newses a{
+.newses a {
   margin-top: 10px;
   text-align: center;
   text-decoration: none;
@@ -282,33 +282,32 @@ footer a {
     padding: 15px;
   }
   /* hot news style  */
-  .hot-news{
+  .hot-news {
     border: 4px;
     border-top: solid black;
     border-bottom: solid black;
-    
   }
-  
+
   .newses {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 10px;
   }
-  .news{
+  .news {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: 10px;
   }
   .news img {
     width: 100%;
     height: auto;
-}
-.hot-news a{
-  padding-bottom: 10px;
-}
+  }
+  .hot-news a {
+    padding-bottom: 10px;
+  }
   /* newsletter style */
   .newsletter {
-    margin-top:10px;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -339,7 +338,7 @@ footer a {
   }
 }
 
-@media only screen and  (min-width: 600px) and (max-width: 1069px) {
+@media only screen and (min-width: 600px) and (max-width: 1069px) {
   body {
     margin: 0;
   }
@@ -372,7 +371,7 @@ footer a {
   .players {
     padding-top: 70px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
   }
@@ -380,18 +379,17 @@ footer a {
     width: 300px;
     padding: 15px;
   }
-  
+
   .player:hover {
     box-shadow: 0px 0px 40px rgba(165, 150, 150, 0.74);
   }
   /* hot news style  */
-  .hot-news{
+  .hot-news {
     width: 800px;
     margin: 0;
     padding: 0;
   }
-  .news{
+  .news {
     margin: 5px;
   }
 }
-
