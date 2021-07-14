@@ -31,12 +31,11 @@ footer {
 }
 .flexible-container {
   margin-bottom: 50px;
-  
 }
-.flexible-container img{
+.flexible-container img {
   width: 100%;
 }
-.flexible-container div{
+.flexible-container div {
   width: 50%;
   padding: 5%;
 }
@@ -121,23 +120,47 @@ header a:hover {
   padding: 10px 0;
 }
 
+/*----------------------
+  hot news styles 
+  ----------------------*/
+.newses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+.news {
+  box-shadow: 0px 5.34229px 13.3557px rgb(231, 226, 226);
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.news img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.news-detail h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /*--------------------
      newsletter style 
 ----------------------*/
 
 .newsletter {
-  background-image: radial-gradient( white,#2d25a0);
+  background-image: radial-gradient(white, #2d25a0);
   width: 100%;
 }
 
-.newsletter h1{
+.newsletter h1 {
   text-align: center;
-    color: white;
-    font-size: 50px;
-    font-weight: 700;
-    padding-top: 30px;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 30px;
 }
-.newsletter p{
+.newsletter p {
   color: white;
   text-align: center;
   font-size: 30px;
@@ -160,14 +183,13 @@ form {
   height: 20%;
 }
 .button {
-    text-decoration: none;
-    background-image: radial-gradient(#9f9bda, #2d25a0);
-    color: white;
-    padding: 10px 24px;
-    font-weight: 500;
-    font-size: 16px;
-    
-  }
+  text-decoration: none;
+  background-image: radial-gradient(#9f9bda, #2d25a0);
+  color: white;
+  padding: 10px 24px;
+  font-weight: 500;
+  font-size: 16px;
+}
 /*-----------------
     footer styles 
 -------------------*/
@@ -193,7 +215,7 @@ footer a {
 -------------------------------*/
 
 @media only screen and (max-width: 688px) {
-  body{
+  body {
     margin: 0;
   }
   .container {
@@ -203,9 +225,9 @@ footer a {
   }
 
   /* header style  */
-  header{
+  header {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
   }
   header h1 {
@@ -213,53 +235,71 @@ footer a {
     font-size: 36px;
     font-weight: 700;
   }
-  header a{
+  header a {
     margin-left: 16px;
   }
-  header img{
-  width: 329px;
-  margin-left: 16px;
+  header img {
+    width: 329px;
+    margin-left: 16px;
   }
   /* players style  */
 
-  .players{
+  .players {
     padding-top: 47px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .player img{
+  .player img {
     width: 300px;
     padding: 15px;
   }
-  /* newsletter style */
-  .newsletter{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-
+  /* hot news style  */
+  .hot-news{
+    border: 2px;
+    border-style: double;
+    border-color: black;
   }
-  .media-query{
+  
+  .newses {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10px;
+  }
+  .news{
+    margin: 10px;
+  }
+  .news img {
+    width: 100%;
+    height: auto;
+}
+  /* newsletter style */
+  .newsletter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .media-query {
     display: flex;
     flex-direction: column;
     padding-top: 5px;
   }
-  .media-query input{
+  .media-query input {
     margin: 0;
   }
-  .media-query a{
+  .media-query a {
     margin-top: 0;
   }
-  .newsletter p{
+  .newsletter p {
     font-size: 20px;
   }
-  .media-query img{
+  .media-query img {
     width: 100%;
   }
   /* footer style  */
-  footer{
+  footer {
     margin: 0;
   }
-  footer img{
+  footer img {
     width: 225px;
     margin-top: 43px;
   }
