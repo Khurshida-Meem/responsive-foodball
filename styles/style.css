@@ -164,6 +164,7 @@ header a:hover {
   color: grey;
 }
 .newses a {
+  color: blue;
   margin-top: 10px;
   text-align: center;
   text-decoration: none;
@@ -233,9 +234,12 @@ footer a {
 .fab {
   padding-left: 14px;
   color: gray;
-  font-size: 30px;
+  font-size: 32px;
 }
-
+.fab:hover{
+  transform: rotate(360deg);
+  transition: transform .5s ease-in-out;
+}
 /*----------------------------
    media query for phone 
 -------------------------------*/
